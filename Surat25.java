@@ -1,4 +1,4 @@
-public class Surat {
+public class Surat25 {
     String idSurat;
     String namaMahasiswa;
     String kelas;
@@ -6,10 +6,10 @@ public class Surat {
     int durasi;
 
     // Konstruktor default
-    public Surat() {}
+    public Surat25() {}
 
     // Konstruktor berparameter
-    public Surat(String idSurat, String namaMahasiswa, String kelas, char jenisIzin, int durasi) {
+    public Surat25(String idSurat, String namaMahasiswa, String kelas, char jenisIzin, int durasi) {
         this.idSurat = idSurat;
         this.namaMahasiswa = namaMahasiswa;
         this.kelas = kelas;

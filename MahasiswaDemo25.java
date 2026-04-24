@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
-public class MahasiswaDemo {
+public class MahasiswaDemo25 {
     public static void main(String[] args) {
         // Langkah 16: Instansiasi stack kapasitas 5
-        StackTugasMahasiswa stack = new StackTugasMahasiswa(5);
+        StackTugasMahasiswa25 stack = new StackTugasMahasiswa25(5);
         // Langkah 17: Deklarasi Scanner dan variabel pilih
         Scanner scan = new Scanner(System.in);
         int pilih;
@@ -29,14 +29,14 @@ public class MahasiswaDemo {
                     String nim = scan.nextLine();
                     System.out.print("Kelas: ");
                     String kelas = scan.nextLine();
-                    Mahasiswa mhs = new Mahasiswa(nama, nim, kelas);
+                    Mahasiswa25 mhs = new Mahasiswa25(nama, nim, kelas);
                     stack.push(mhs);
                     System.out.printf("Tugas %s berhasil dikumpulkan\n", mhs.nama);
                     break;
 
                 case 2:
                     // Percobaan 2: tambahkan konversi biner setelah penilaian
-                    Mahasiswa dinilai = stack.pop();
+                    Mahasiswa25 dinilai = stack.pop();
                     if (dinilai != null) {
                         System.out.println("Menilai tugas dari " + dinilai.nama);
                         System.out.print("Masukkan nilai (0-100): ");
@@ -51,7 +51,7 @@ public class MahasiswaDemo {
                     break;
 
                 case 3:
-                    Mahasiswa lihat = stack.peek();
+                    Mahasiswa25 lihat = stack.peek();
                     if (lihat != null) {
                         System.out.println("Tugas terakhir dikumpulkan oleh " + lihat.nama);
                     }
@@ -65,7 +65,7 @@ public class MahasiswaDemo {
 
                 case 5:
                     // Pertanyaan No.4 — Lihat tugas terbawah
-                    Mahasiswa bawah = stack.peekBottom();
+                    Mahasiswa25 bawah = stack.peekBottom();
                     if (bawah != null) {
                         System.out.println("Mahasiswa pertama yang mengumpulkan tugas: " + bawah.nama);
                     }

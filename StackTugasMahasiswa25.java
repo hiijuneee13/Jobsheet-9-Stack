@@ -1,13 +1,13 @@
-public class StackTugasMahasiswa {
+public class StackTugasMahasiswa25 {
     // Langkah 6: Atribut sesuai class diagram
-    Mahasiswa[] stack;
+    Mahasiswa25[] stack;
     int size;
     int top;
 
     // Langkah 7: Konstruktor berparameter
-    public StackTugasMahasiswa(int size) {
+    public StackTugasMahasiswa25(int size) {
         this.size = size;
-        stack = new Mahasiswa[size];
+        stack = new Mahasiswa25[size];
         top = -1;
     }
 
@@ -30,7 +30,7 @@ public class StackTugasMahasiswa {
     }
 
     // Langkah 10: Method push
-    public void push(Mahasiswa mhs) {
+    public void push(Mahasiswa25 mhs) {
         if (!isFull()) {
             top++;
             stack[top] = mhs;
@@ -40,9 +40,9 @@ public class StackTugasMahasiswa {
     }
 
     // Langkah 11: Method pop
-    public Mahasiswa pop() {
+    public Mahasiswa25 pop() {
         if (!isEmpty()) {
-            Mahasiswa m = stack[top];
+            Mahasiswa25 m = stack[top];
             top--;
             return m;
         } else {
@@ -52,7 +52,7 @@ public class StackTugasMahasiswa {
     }
 
     // Langkah 12: Method peek
-    public Mahasiswa peek() {
+    public Mahasiswa25 peek() {
         if (!isEmpty()) {
             return stack[top];
         } else {
@@ -70,7 +70,7 @@ public class StackTugasMahasiswa {
     }
 
     // === PERTANYAAN NO.4: Lihat tugas terbawah (pertama dikumpulkan) ===
-    public Mahasiswa peekBottom() {
+    public Mahasiswa25 peekBottom() {
         if (!isEmpty()) {
             return stack[0];
         } else {
@@ -86,7 +86,7 @@ public class StackTugasMahasiswa {
 
     // === PERCOBAAN 2: Konversi nilai desimal ke biner ===
     public String konversiDesimalKeBiner(int nilai) {
-        StackKonversi stack = new StackKonversi();
+        StackKonvers25i stack = new StackKonvers25i();
         while (nilai > 0) {
             int sisa = nilai % 2;
             stack.push(sisa);

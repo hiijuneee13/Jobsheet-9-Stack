@@ -1,11 +1,11 @@
-public class StackSurat {
-    Surat[] stack;
+public class StackSurat25 {
+    Surat25[] stack;
     int size;
     int top;
 
-    public StackSurat(int size) {
+    public StackSurat25(int size) {
         this.size = size;
-        stack = new Surat[size];
+        stack = new Surat25[size];
         top = -1;
     }
 
@@ -18,7 +18,7 @@ public class StackSurat {
     }
 
     // Push: terima surat masuk
-    public void push(Surat surat) {
+    public void push(Surat25 surat) {
         if (!isFull()) {
             top++;
             stack[top] = surat;
@@ -28,9 +28,9 @@ public class StackSurat {
     }
 
     // Pop: proses/validasi surat teratas
-    public Surat pop() {
+    public Surat25 pop() {
         if (!isEmpty()) {
-            Surat s = stack[top];
+            Surat25 s = stack[top];
             top--;
             return s;
         } else {
@@ -40,7 +40,7 @@ public class StackSurat {
     }
 
     // Peek: lihat surat teratas tanpa mengeluarkan
-    public Surat peek() {
+    public Surat25 peek() {
         if (!isEmpty()) {
             return stack[top];
         } else {

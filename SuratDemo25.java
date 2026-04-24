@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
-public class SuratDemo {
+public class SuratDemo25 {
     public static void main(String[] args) {
-        StackSurat stack = new StackSurat(10);
+        StackSurat25 stack = new StackSurat25(10);
         Scanner scan = new Scanner(System.in);
         int pilih;
 
@@ -30,13 +30,13 @@ public class SuratDemo {
                     System.out.print("Durasi (hari): ");
                     int durasi = scan.nextInt();
                     scan.nextLine();
-                    Surat surat = new Surat(id, nama, kelas, jenis, durasi);
+                    Surat25 surat = new Surat25(id, nama, kelas, jenis, durasi);
                     stack.push(surat);
                     System.out.printf("Surat izin dari %s berhasil diterima.\n", nama);
                     break;
 
                 case 2:
-                    Surat diproses = stack.pop();
+                    Surat25 diproses = stack.pop();
                     if (diproses != null) {
                         String jenisStr = (diproses.jenisIzin == 'S' || diproses.jenisIzin == 's')
                                 ? "Sakit" : "Izin";
@@ -49,7 +49,7 @@ public class SuratDemo {
                     break;
 
                 case 3:
-                    Surat terakhir = stack.peek();
+                    Surat25 terakhir = stack.peek();
                     if (terakhir != null) {
                         String jenisStr = (terakhir.jenisIzin == 'S' || terakhir.jenisIzin == 's')
                                 ? "Sakit" : "Izin";

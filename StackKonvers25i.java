@@ -1,11 +1,11 @@
-public class StackKonversi {
+public class StackKonvers25i {
     // Atribut Stack untuk biner
     int[] tumpukanBiner;
     int size;
     int top;
 
     // Konstruktor: diasumsikan 32 bit
-    public StackKonversi() {
+    public StackKonvers25i() {
         this.size = 32; // asumsi 32 bit
         tumpukanBiner = new int[size];
         top = -1;

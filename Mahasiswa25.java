@@ -1,4 +1,4 @@
-public class Mahasiswa {
+public class Mahasiswa25 {
     // Langkah 2: Atribut sesuai class diagram
     String nim;
     String nama;
@@ -6,10 +6,10 @@ public class Mahasiswa {
     int nilai;
 
     // Konstruktor default
-    public Mahasiswa() {}
+    public Mahasiswa25() {}
 
     // Langkah 3: Konstruktor berparameter, nilai default = -1
-    public Mahasiswa(String nama, String nim, String kelas) {
+    public Mahasiswa25(String nama, String nim, String kelas) {
         this.nama = nama;
         this.nim = nim;
         this.kelas = kelas;
